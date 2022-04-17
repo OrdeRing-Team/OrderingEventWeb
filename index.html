@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+  
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- user-scalable=no 는 모바일 기기에서 확대/축소 를 불가능하게 한다-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>오더링 팀을 소개합니다!</title>
+
+        <!-- 부트스트랩 CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <!-- AOS(스크롤 시 애니메이션 시작) 라이브러리-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+
+        <style>
+            /*구글 웹 폰트 적용*/
+            @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+            
+            .ordering_font{
+                font-family: 'Jeju Myeongjo', serif;/*웹 폰트 지정*/
+                color: #E1695E;
+                font-size: large;
+            }
+
+            @font-face{
+		    font-family:'BMHANNAPro'; /*글꼴*/
+		    src: local('BMHANNAPro'),
+			url('BMHANNAPro.ttf') format('truetype');
+	        }
+            
+            @font-face{
+		    font-family:'SquarePeg'; /*글꼴*/
+		    src: local('SquarePeg'),
+			url('SquarePeg.ttf') format('truetype');
+	        }
+
+            /*웹 폰트 지정*/
+            .bm-font{
+		        font-family: 'BMHANNAPro', sans-serif;
+		        color: black;
+	        }
+
+            .square-font{
+		        font-family: 'SquarePeg', sans-serif;
+		        color: black;
+	        }
+
+            .closing-text{
+		        font-family: sans-serif;
+		        color: black;
+                font-size: 14px;
+	        }
+            /***********/
+
+            #martop{
+                margin:50px 0px 0px 0px;
+            }
+
+            #martopbot{
+                margin:50px 0px 50px 0px;
+            }
+            
+            #marbot{
+                margin:0px 0px 50px 0px;
+            }
+
+            #martopbotlg{
+                margin:300px 0px 100px 0px;
+            }
+
+            #medium{
+                margin:50px 0px 0px 0px;
+            }
+            
+            #insta{
+                margin-bottom: 150px;
+            }
+
+            #closing{
+                background-color: rgb(215, 215, 215); 
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 30px;
+                padding-bottom: 20px;
+            }
+          </style>
+          
+    </head>
+
+    <body>
+        <!-- AOS 초기화 -->
+        <script> 
+            AOS.init(); 
+        </script>
+
+        <div class="row">
+            <div class="col-md-12" style="background-color: #E1695E; text-align: center; padding-bottom: 100px;">
+                <img src="introduce_top.jpg" width=400px, height=auto>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <img id="martopbot" src="image_1.png" width=80px, height=auto>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <span id="martop" style="font-size: 18px">
+                    <span data-aos="fade-up" data-aos-duration="500" class="bm-font" style="letter-spacing:0.01em"><b>OrdeRing</b></span>
+                    <span data-aos="fade-up" data-aos-duration="1000"style="letter-spacing:0.01em">은 경상국립대학교 컴퓨터과학과</span>
+                </span>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <span style="font-size: 18px">
+                    <p data-aos="fade-up" data-aos-duration="1500" id="marbot" style="letter-spacing:0.01em">종합설계PBL 프로젝트로 시작되었습니다.</p>
+                </span>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <span style="font-size: 50px">
+                    <p data-aos="flip-right" id="martopbotlg" class="square-font" style="letter-spacing:0.01em; color:blue"><b>GNU CS</b></p>
+                </span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" style="text-align: center; font-size: 48px; margin-top: 150px; margin-bottom: 200px;">
+                <span data-aos="fade-down" data-aos-duration="1000" class="bm-font"><b>팀원</b></span>
+                <span data-aos="fade-up" data-aos-duration="1500" class="bm-font"><b>소개</b></span>
+            </div>
+        </div>
+
+        <div id="medium" class="row" style="margin-bottom: 10px;">
+            <div class="col-md-12" style="text-align: center">
+                <img data-aos="slide-right" data-aos-duration="1000" id="insta" src="seung.gif" width=90%, height=auto>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <img data-aos="slide-right" data-aos-duration="1000" id="insta" src="jung.gif" width=90%, height=auto>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <img data-aos="slide-right" data-aos-duration="1000" id="insta" src="min.gif" width=90%, height=auto>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <img data-aos="slide-right" data-aos-duration="1000" id="insta" src="byeong.gif" width=90%, height=auto>
+            </div>
+        </div>
+
+        <div class="row" id="closing">
+            <div class="col-md-12">
+                <span class="bm-font" style="font-size: 24px; color: black;"><b>Contact Us</b></span>
+            </div>
+            <div class="col-md-12">
+                <span class="closing-text">(우)52828 경남 진주시 진주대로 501 경상국립대학교 자연과학대학 컴퓨터과학부 컴퓨터과학전공</span>
+            </div>
+            <div class="col-md-12">
+                <span class="closing-text"><b>Call </b>055-772-1380</span>
+            </div>
+            <div class="col-md-12">
+                <span class="closing-text"><b>Fax </b>055-772-1389</span>
+            </div>
+            <div class="col-md-12">
+                <span class="closing-text"><b>E-mail </b>cs@gnu.ac.kr</span>
+            </div>
+        </div>
+    </body>
+</html>

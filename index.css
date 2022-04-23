@@ -12,13 +12,37 @@
 @font-face{
 font-family:'BMHANNAPro'; /*글꼴*/
 src: local('BMHANNAPro'),
-url('BMHANNAPro.ttf') format('truetype');
+url('./fonts/BMHANNAPro.ttf') format('truetype');
 }
 
 @font-face{
 font-family:'SquarePeg'; /*글꼴*/
 src: local('SquarePeg'),
-url('SquarePeg.ttf') format('truetype');
+url('./fonts/SquarePeg.ttf') format('truetype');
+}
+
+@font-face{
+font-family:'BMDOHYEON'; /*글꼴*/
+src: local('BMDOHYEON'),
+url('./fonts/BMDOHYEON.ttf') format('truetype');
+}
+
+@font-face{
+font-family:'BMEULJIROTTF'; /*글꼴*/
+src: local('BMEULJIROTTF'),
+url('./fonts/BMEULJIROTTF.ttf') format('truetype');
+}
+
+@font-face{
+font-family:'BMJUA'; /*글꼴*/
+src: local('BMJUA'),
+url('./fonts/BMJUA.ttf') format('truetype');
+}
+
+@font-face{
+font-family:'BMKIRANGHAERANG'; /*글꼴*/
+src: local('BMKIRANGHAERANG'),
+url('./fonts/BMKIRANGHAERANG.ttf') format('truetype');
 }
 
 body {
@@ -31,11 +55,68 @@ body {
     color: black;
 }
 
+.bmjua-font{
+    font-family: 'BMHANNAPro', sans-serif;
+    color: black;
+}
+
+.bmdh-font{
+    font-family: 'BMDOHYEON', sans-serif;
+    color: black;
+}
+
+.bmeul-font{
+    font-family: 'BMEULJIROTTF', sans-serif;
+    color: black;
+}
+
+.bmki-font{
+    font-family: 'BMKIRANGHAERANG', sans-serif;
+    color: black;
+}
 .square-font{
     font-family: 'SquarePeg', sans-serif;
     color: black;
 }
 
+/* 모서리 둥근 사각형 */
+.couponbox {
+    background-color: white;
+    border: 2px solid rgb(27, 65, 218);
+    line-height: 1rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    margin-left: 50px;
+    margin-right: 50px; 
+    width: auto; 
+    height: auto;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.download-background {
+    background-color: #c1c1c1;
+    border-bottom: 2px solid rgb(27, 65, 218);
+    border-left: 2px solid rgb(27, 65, 218);
+    border-right: 2px solid rgb(27, 65, 218);
+    line-height: 1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-left: 50px;
+    margin-right: 50px; 
+    width: auto; 
+    height: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.download-text{
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    font-size: 14px;
+}
 .closing-text{
     font-family: sans-serif;
     color: black;
@@ -46,6 +127,8 @@ body {
 .insta{
     margin-bottom: 150px;
 }
+
+
 
 #padtop{
     padding:50px 0px 0px 0px;

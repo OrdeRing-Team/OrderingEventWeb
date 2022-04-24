@@ -111,6 +111,12 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.download-btn {
+    background-color: #c1c1c1;
+    text-align: center;
+    border: 0;
+    outline: 0;
+}
 .download-text{
     text-align: center;
     font-family: sans-serif;

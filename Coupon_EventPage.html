@@ -23,8 +23,8 @@
     <body>
         <!-- 클라이언트 자바스크립트 연동 -->
         <script type="text/javascript">
-            function showAndroidToast(toast) {
-                Android.showToast(toast);
+            function couponIssueToAndroid(price) {
+                Android.CouponIssue(parseInt(price));
             }
         </script>
 
@@ -34,11 +34,15 @@
         </script>
 
         <div class="row" style="background-color: white;">
-            <div class="col-md-12" style="background-color: white; text-align: center; margin-bottom: 50px;">
+            <div class="col-md-12" style="background-color: white; text-align: center; margin-bottom: 0px;">
                 <img src="./images/coupon_inside_title_background.gif" width=100%, height=auto>
             </div>
         </div>
-
+        <div class="row" style="background-color:white">
+            <div class="col-md-12" style="text-align: center; margin-bottom: 30px;">
+                <img src="./images/eventweb_2_ordering_short.gif" width=100%, height=auto>
+            </div>
+        </div>
         <div class="row" style="background-color: white;">
             <div class="col-md-12" style="text-align: center; margin-bottom: 30px;">
                 <span style="font-size: 48px">
@@ -69,24 +73,24 @@
                 <p style="font-size: 48px;" class="bmdh-font">30,000원</p>
                 <p style="margin-top: 30px;font-size: 32px;color: rgb(255, 5, 55);" class="bmdh-font">COUPON</p>
             </div>
-            <div type="button" class = "download-background">
-                <button type="button" class="download-btn" onClick="showAndroidToast('3만원 쿠폰 클릭')"><img src="./images/download-icon.png" width="40px" height="auto"></button>
+            <div class = "download-background">
+                <button type="button" class="download-btn" onClick="couponIssueToAndroid('30000')"><img src="./images/download-icon.png" width="40px" height="auto"></button>
             </div>
 
             <div class = "couponbox">
                 <p style="font-size: 48px;" class="bmdh-font">50,000원</p>
                 <p style="margin-top: 30px;font-size: 32px;color: rgb(255, 5, 55);" class="bmdh-font">COUPON</p>
             </div>
-            <div type="button" class = "download-background">
-                <button type="button" class="download-btn" onClick="showAndroidToast('5만원 쿠폰 클릭')"><img src="./images/download-icon.png" width="40px" height="auto"></button>
+            <div class = "download-background">
+                <button type="button" class="download-btn" onClick="couponIssueToAndroid('50000')"><img src="./images/download-icon.png" width="40px" height="auto"></button>
             </div>
 
             <div class = "couponbox">
                 <p style="font-size: 48px;" class="bmdh-font">100,000원</p>
                 <p style="margin-top: 30px;font-size: 32px;color: rgb(255, 5, 55);" class="bmdh-font">COUPON</p>
             </div>
-            <div type="button" class = "download-background" style="margin-bottom: 50px;">
-                <button type="button" class="download-btn" onClick="showAndroidToast('10만원 쿠폰 클릭')"><img src="./images/download-icon.png" width="40px" height="auto"></button>
+            <div class = "download-background" style="margin-bottom: 50px;">
+                <button type="button" class="download-btn" onClick="couponIssueToAndroid('100000')"><img src="./images/download-icon.png" width="40px" height="auto"></button>
             </div>
         </div>
 
